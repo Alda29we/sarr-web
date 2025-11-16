@@ -1,0 +1,34 @@
+Instrucciones Finales de Despliegue para Render (Solo Frontend):
+
+Paso 1: Preparar tu Repositorio Git
+
+*   Asegúrate de que todos los cambios que hemos realizado (eliminación del backend, reversión de App.js, integración de Formspree en mock.js, limpieza de referencias a Emergent, actualización del número de teléfono, funcionalidad de "Solicitar cotización" y adición del favicon) estén guardados y subidos a tu repositorio Git (GitHub, GitLab, Bitbucket).
+
+Paso 2: Desplegar el Frontend como un Sitio Estático en Render
+
+1.  Conectar tu Repositorio Git:
+    *   Ve a tu Render Dashboard (https://dashboard.render.com/).
+    *   Haz clic en "New" (Nuevo) -> "Static Site" (Sitio Estático).
+    *   Conecta tu cuenta de Git (GitHub, GitLab, Bitbucket) si aún no lo has hecho.
+    *   Selecciona el repositorio que contiene tu proyecto.
+2.  Configurar el Servicio de Sitio Estático:
+    *   Name (Nombre): sarr-frontend (o el nombre que prefieras para tu sitio).
+    *   Region (Región): Elige una región cercana a tus usuarios objetivo.
+    *   Branch (Rama): main (o la rama que uses para el despliegue, por ejemplo, master).
+    *   Root Directory (Directorio Raíz): frontend (esta es la carpeta donde se encuentra tu package.json del frontend).
+    *   Build Command (Comando de Construcción): yarn install && yarn build
+    *   Publish Directory (Directorio de Publicación): build (este es el directorio donde react-scripts build genera los archivos estáticos de tu aplicación React).
+    *   Environment Variables (Variables de Entorno): No se necesitan variables de entorno para el frontend en este setup, ya que Formspree se usa directamente y no hay backend.
+    *   Haz clic en "Create Static Site" (Crear Sitio Estático).
+3.  Esperar el Despliegue:
+    *   Render tomará tu código, ejecutará el comando de construcción (yarn install && yarn build), y luego servirá los archivos generados desde el directorio build.
+    *   Una vez que el despliegue sea exitoso, Render te proporcionará una URL pública (por ejemplo, https://tu-sitio.onrender.com).
+
+Paso 3: Verificar la Integración con Formspree
+
+*   Una vez que tu sitio esté desplegado, navega a la URL pública.
+*   Ve a la sección de "Licencias" y haz clic en "Solicitar cotización" en cualquier elemento para probar que te desplaza al formulario.
+*   Rellena y envía el formulario de cotización o el formulario de contacto.
+*   Verifica en tu cuenta de Formspree que los envíos se estén recibiendo correctamente.
+
+Si tienes alguna pregunta durante el proceso de despliegue en Render, no dudes en consultarme.
