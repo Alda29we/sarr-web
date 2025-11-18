@@ -102,14 +102,18 @@ export const mockLicenses = [
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xblqkplq";
 
 export const mockSubmitQuoteForm = async (formData) => {
+  const data = new FormData();
+  for (const key in formData) {
+    data.append(key, formData[key]);
+  }
+
   try {
     const response = await fetch(FORMSPREE_ENDPOINT, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify(formData)
+      body: data
     });
 
     if (response.ok) {
@@ -127,14 +131,18 @@ export const mockSubmitQuoteForm = async (formData) => {
 };
 
 export const mockSubmitContactForm = async (formData) => {
+  const data = new FormData();
+  for (const key in formData) {
+    data.append(key, formData[key]);
+  }
+
   try {
     const response = await fetch(FORMSPREE_ENDPOINT, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify(formData)
+      body: data
     });
 
     if (response.ok) {
