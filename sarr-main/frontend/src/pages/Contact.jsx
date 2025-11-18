@@ -57,7 +57,7 @@ const Contact = () => {
       icon: Phone,
       title: 'Teléfono',
       value: '+51 900 230 747',
-      link: 'tel:+5190030747'
+      link: 'tel:+51900230747'
     },
     {
       icon: Mail,
