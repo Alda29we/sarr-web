@@ -79,7 +79,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Redes Sociales</h3>
             <div className="flex space-x-3">
               <a
-                href="https://www.facebook.com/share/1Aak2EiPfn/"
+                href="https://www.facebook.com/segundoaldairreyesrojas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300"
@@ -95,7 +95,7 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/AldairReyesRoj1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-sky-500 hover:text-white transition-all duration-300"

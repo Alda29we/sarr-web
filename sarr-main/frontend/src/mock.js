@@ -99,7 +99,7 @@ export const mockLicenses = [
   }
 ];
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xblqkplq";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeodegjr";
 
 export const mockSubmitQuoteForm = async (formData) => {
   const data = new FormData();

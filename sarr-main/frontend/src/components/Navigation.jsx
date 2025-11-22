@@ -16,7 +16,7 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { path: '/', label: 'Inicio' },
+    { path: '/inicio', label: 'Inicio' },
     { path: '/servicios', label: 'Servicios' },
     { path: '/licencias', label: 'Licencias' },
     { path: '/contacto', label: 'Contacto' }
@@ -31,7 +31,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/inicio" className="flex items-center space-x-3 group">
             <img
               src="/images/logo.png"
               alt="SRR Logo"

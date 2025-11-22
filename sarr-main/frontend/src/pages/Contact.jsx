@@ -77,7 +77,7 @@ const Contact = () => {
     {
       name: 'Facebook',
       icon: Facebook,
-      url: 'https://www.facebook.com/share/1Aak2EiPfn/',
+      url: 'https://www.facebook.com/segundoaldairreyesrojas/',
       color: 'hover:bg-blue-600'
     },
     {
@@ -89,7 +89,7 @@ const Contact = () => {
     {
       name: 'Twitter',
       icon: Twitter,
-      url: 'https://twitter.com',
+      url: 'https://x.com/AldairReyesRoj1',
       color: 'hover:bg-sky-500'
     },
     {
