@@ -1,0 +1,22 @@
+# ============================================
+# SARR Backend - Variables de Entorno
+# ============================================
+# IMPORTANTE: Copia este archivo como .env y configúralo
+
+# Resend API Key
+# Obtener en: https://resend.com/api-keys
+RESEND_API_KEY=re_123456789_TU_API_KEY_AQUI
+
+# Email donde recibirás los mensajes
+CONTACT_EMAIL=aldairreyesrojas55@gmail.com
+
+# URL del frontend (para CORS)
+# En desarrollo: http://localhost:3000
+# En producción: https://tu-dominio.onrender.com
+FRONTEND_URL=http://localhost:3000
+
+# Puerto del servidor (Render lo asigna automáticamente)
+PORT=3001
+
+# Ambiente
+NODE_ENV=development

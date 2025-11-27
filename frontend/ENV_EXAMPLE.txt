@@ -1,0 +1,9 @@
+# ==================================
+# SARR Frontend - Variables de Entorno
+# ==================================
+# IMPORTANTE: Copia este archivo como .env y configúralo
+
+# URL del Backend API
+# En desarrollo local: http://localhost:3001
+# En producción Render: https://sarr-backend.onrender.com
+REACT_APP_API_URL=http://localhost:3001
